@@ -7,6 +7,7 @@ public class camera : MonoBehaviour
     public float rotationSpeed = 20f;
     private Quaternion targetRotation;
     float targetY = 0f;
+    float targetX = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,15 @@ public class camera : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             targetY += Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime; //rota level
-            targetRotation.eulerAngles = new Vector3(0, Mathf.Repeat(targetY, 360f) + targetY, 0); //get euler Angles
+            targetX -= Input.GetAxis("Mouse Y") * 10 * Time.deltaTime;
+            if (targetX > 20) //rota X will not over 20 degree
+            {
+                targetX = 20;
+            } else if (targetX < -20)
+            {
+                targetX = -20;
+            }
+            targetRotation.eulerAngles = new Vector3(targetX, Mathf.Repeat(targetY, 360f), 0); //get euler Angles
             transform.rotation = targetRotation;
         }
     }
