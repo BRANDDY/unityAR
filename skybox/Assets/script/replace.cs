@@ -2,15 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using OpenCvSharp;
-using OpenCVForUnity;
 
 public class Replace : MonoBehaviour
 {
-    public RawImage imge;
-    private void Start()
+
+
+    float sensS, cutoffS;
+    Color colS;
+
+    // Use this for initialization
+    void Start()
     {
-        var img = Imgcodecs.imread(Application.streamingAssetsPath + "////",1);
-        var dst = new MatchTargetWeightMask(img.cols(), img.rows(), CV_8UC4);
+        sensS = GetComponent<Image>().material.GetFloat("_Sens");
+        cutoffS = GetComponent<Image>().material.GetFloat("_Cutoff");
+        colS = GetComponent<Image>().material.GetColor("_Color");
+
+        sens = sensS;
+        cutoff = cutoffS;
+
     }
+
+    void Update()
+    {
+
+    }
+
+    public float sens, cutoff;
+    public string r = "255", g = "255", b = "255";
+   
 }
