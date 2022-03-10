@@ -1,5 +1,6 @@
 ## AR Demo
 
+[demo video](https://github.com/BRANDDY/unityAR/raw/gh-pages/docs/assets/UnityAR_demo.mp4)
 ```HTML
 <video width="500" height="300" controls>
   <sourxe src="UnityAR_demo.mp4" type="video/mp4">
