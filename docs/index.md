@@ -1,3 +1,18 @@
+## AR Demo
+
+```HTML
+<video width="500" height="300" controls>
+  <sourxe src="UnityAR_demo.mp4" type="video/mp4">
+</video>
+```
+  
+
+
+
+
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/BRANDDY/unityAR/edit/gh-pages/docs/index.md) to maintain and preview the content for your website in Markdown files.
