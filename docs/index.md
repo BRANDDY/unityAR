@@ -1,6 +1,7 @@
 ## AR Demo
 
-[watch more](https://github.com/BRANDDY/unityAR/raw/gh-pages/docs/assets/qr_unityAR.png)
+![Alt text] [img]
+[img](https://github.com/BRANDDY/unityAR/raw/gh-pages/docs/assets/qr_unityAR.png)
 
 [watch more](https://drive.google.com/file/d/1GZh5S8cb0CitseI6WiguvvhZbLj8uNk5/view?usp=sharing)
 
