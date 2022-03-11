@@ -1,3 +1,14 @@
+!<document HTML>
+<html>
+  <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"> </script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs='sourceType: webcam;'>
+      <a-box position='0 0.5 0' material='color: black;'></a-box>
+      <a-marker-camera preset = 'hiro'></a-marker-camera>
+    </a-scene>
+  </body>
+</html>
 
 
 # Project Idea
@@ -7,11 +18,6 @@
 - After download and install on your Android device, you can rotate to see what's around you.
 - You also can interact with the object. Let the meteorite explode, or connect the stars into a constellation.
 
----
-layout: default
-title: AR Site
-permalink: ar.html
----
 
 
 
