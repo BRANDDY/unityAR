@@ -7,6 +7,11 @@
 - After download and install on your Android device, you can rotate to see what's around you.
 - You also can interact with the object. Let the meteorite explode, or connect the stars into a constellation.
 
+---
+layout: default
+title: AR Site
+permalink: ar.html
+---
 
 
 
