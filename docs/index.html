@@ -3,7 +3,9 @@
   <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
   <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene arjs="sourceType: webcam; debugUIEnabled: false;"embedded>
+    <a-scene arjs="sourceType: webcam; debugUIEnabled: false;"embedded renderer="logarithmicDepthBuffer: true;"
+		vr-mode-ui="enabled: false"
+		id="scene">
       <a-marker preset = "custom" type="pattern" url="pattern-Aquarius.patt">
         <a-box position="0 0.5 0" material="opacity:0.5;"></a-box>
       </a-marker>
