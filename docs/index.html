@@ -7,8 +7,8 @@
       <a-marker preset = 'custom' type='pattern' url='./assets/pics/pattern-Aquarius.patt'>
         <a-entity obj-model="obj:url(./assets/model/Aquarius.obj);
                              mtl:url(./assets/model/Aquarius.mtl)"></a-entity>
-        <a-sphere id="bird" position="2 3 0" radius="0.2" pivot="-2 0 0" color="5" 
-                  animation="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing: linear" ></a-sphere>
+        <a-box id="bird" position="2 3 0" scale="2 2 2" pivot="-2 0 0" color="red" 
+                  animation="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing: linear" ></a-box>
         <a-text value="Aquarius" position="0 3.5 0" align="center"></a-text>
       </a-marker>
       <a-entity camera></a-entity>
