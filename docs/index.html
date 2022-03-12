@@ -6,9 +6,10 @@
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
       <a-marker preset = 'custom' type='pattern' url='/assets/pattern-Aquarius.patt'>
         <a-entity 
-                  obj-model="obj:url(https://github.com/BRANDDY/unityAR/raw/gh-pages/docs/assets/Aquarius.obj);
-                             mtl:url(https://github.com/BRANDDY/unityAR/raw/gh-pages/docs/assets/Aquarius.mtl)">
+                  obj-model="obj:url('/assets/Aquarius.obj');
+                             mtl:url('/assets/Aquarius.mtl')">
         </a-entity>
+          <a-text value="Rock on Roll" position="0 0.8 0" align="center"></a-text>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
