@@ -15,13 +15,12 @@
                     easing:linear">
           </a-box>
           <a-text value="Aquarius" position="0 3.5 0" align="center"></a-text>
-        </a-entity>
-        <a-sphere id="mercury" position="2 0 0" radius="0.3" pivot="-2 0 0" color="#afb4db"
-                animation="property: rotation; to: 0 0 360; loop: true; dur: 2410 ;easing:linear"></a-sphere>
-      </a-marker>
+          </a-entity>
+          <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+            <a-sphere position="5 0 0" color="mediumseagreen"></a-sphere>
+          </a-entity>
+        </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
-
-
