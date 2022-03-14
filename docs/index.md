@@ -41,7 +41,7 @@ Watch [Full Video](https://drive.google.com/file/d/1GZh5S8cb0CitseI6WiguvvhZbLj8
 			<p id="demo">Building Interactive Systems</p>
 
 			<!-- MARKER BASED: MULTI MARKER | PRESET hiro | kanji -->
-			<button type="button" onclick="openTab('./ar.html')">Take me to marker-based AR</button>
+			<button type="button" onclick="openTab('ar.html')">Take me to marker-based AR</button>
 			<script>
 				function openTab(url) {
 					const link = document.createElement('a');
