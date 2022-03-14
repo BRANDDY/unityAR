@@ -26,7 +26,7 @@ Watch [Full Video](https://drive.google.com/file/d/1GZh5S8cb0CitseI6WiguvvhZbLj8
 - Develop Material
 - Develop Shader
 
-<!DOCTYPE html>
+
 <html lang="en">
 	<head>
 		<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,5 +50,4 @@ Watch [Full Video](https://drive.google.com/file/d/1GZh5S8cb0CitseI6WiguvvhZbLj8
 			</script>
         </body>
 	</center>
-</html>
 </html>
