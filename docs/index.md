@@ -1,6 +1,6 @@
 ---
 layout: home
-permalink: index
+permalink: index.html
 ---
 
 # Project Idea
