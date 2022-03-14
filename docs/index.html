@@ -7,14 +7,14 @@
       <a-asset>
         </a-asset-item id="bird-obj" src="./assets/model/bird.obj"></a-asset-item>
         </a-asset-item id="bird-mtl" src="./assets/model/bird.mtl"></a-asset-item>
+        </a-asset-item id="Aquarius-obj" src="./assets/model/Aquarius.obj"></a-asset-item>
+        </a-asset-item id="Aquarius-mtl" src="./assets/model/Aquarius.mtl"></a-asset-item>
       </a-asset>
       <a-marker preset = 'custom' type='pattern' url='./assets/pics/pattern-Aquarius.patt'>
-        <a-entity obj-model="obj:url(./assets/model/Aquarius.obj);
-                             mtl:url(./assets/model/Aquarius.mtl)" position =" 0 0 0">
-          <a-text value="AQUARIUS" position="0 3.5 0" color="blue" align="center"></a-text>
+        <a-entity obj-model="obj: #Aquarius-obj; mtl: #Aquarius-mtl" position =" 0 0 0">
+          <a-text value="AQUARIUS" position="0 3.5 0" color="white" align="center"></a-text>
         </a-entity>
-        <a-entity obj-model="obj: #bird-obj; mtl: #bird-mtl"
-                  position="3 3 0" scale="2 2 2" pivot="-3 0 0" rotation="0 0 0" 
+        <a-entity obj-model="obj: #bird-obj; mtl: #bird-mtl" position="3 3 0" scale="2 2 2" pivot="-3 0 0" rotation="0 0 0" 
                   animation="property:rotation; to: 0 360 0; loop: true; dur:3000; easing:linear">
         </a-entity>
         <a-box position="3 3 0" scale="0.5 0.5 0.5" pivot="-3 0 0" 
