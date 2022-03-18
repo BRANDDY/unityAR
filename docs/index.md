@@ -48,6 +48,18 @@ Watch [Full Video](https://drive.google.com/file/d/1GZh5S8cb0CitseI6WiguvvhZbLj8
 					link.remove();
 				}
 			</script>
+			<!-- MARKER BASED: MULTI MARKER | PRESET hiro | kanji -->
+			<button type="button" onclick="openTab('./locationBased.html')">location-based AR</button>
+			<script>
+				function openTab(url) {
+					const link = document.createElement('a');
+					link.href = url;
+					link.target = '_blank';
+					document.body.appendChild(link);
+					link.click();
+					link.remove();
+				}
+			</script>
         </body>
 	</center>
 </html>
