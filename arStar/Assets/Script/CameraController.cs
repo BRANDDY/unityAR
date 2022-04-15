@@ -57,23 +57,23 @@ public class CameraController : MonoBehaviour
         {
             GameObject.Find("cons1").GetComponent<LineUp>().Line();
         }
-        if (angle < 0.24f && angle > 0.15)
+        if (angle < 0.24f && angle > 0.15f)
         {
             GameObject.Find("cons2").GetComponent<LineUp>().Line();
         }
-        if (angle < 0.69f && angle > 0.49)
+        if (angle < 0.69f && angle > 0.49f)
         {
             GameObject.Find("cons4").GetComponent<LineUp>().Line();
         }
-        if (angle < 0.99f && angle > 0.97)
+        if (angle < 0.99f && angle > 0.97f)
         {
             GameObject.Find("cons3").GetComponent<LineUp>().Line();
         }
-        if (angle < 0.76f && angle > 0.59)
+        if (angle > 0.45f && angle < 0.65f)
         {
             GameObject.Find("cons5").GetComponent<LineUp>().Line();
         }
-        //Debug.Log(transform.rotation.y);
+        Debug.Log(transform.rotation.y);
     }
 
 }
