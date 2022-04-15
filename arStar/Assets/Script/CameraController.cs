@@ -2,34 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotaCra : MonoBehaviour
+public class CameraController : MonoBehaviour
 {
     private const float LowPassFilterFactor = 0.2f;
     public float rotationSpeed = 20f;
     private Quaternion targetRotation;
     float targetY = 0f;
     float targetX = 0f;
-    // Start is called before the first frame update
+
     void Start()
     {
-        Input.gyro.enabled = true;//陀螺仪功能为true
-        //Vector3 rotationVelocity = Input.gyro.rotationRate;//陀螺仪旋转速度
-        //Vector3 rotationVelocity2 = Input.gyro.rotationRateUnbiased;//更精确值
-        Input.gyro.updateInterval = 0.1f; //陀螺仪检查时间（更新速度）s
+        Input.gyro.enabled = true;
+        //Vector3 rotationVelocity = Input.gyro.rotationRate;
+        //Vector3 rotationVelocity2 = Input.gyro.rotationRateUnbiased;
+        Input.gyro.updateInterval = 0.1f;
         //targetRotation = transform.identify
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
+        LineupTrigger();
+        CameraRota();
+    }
+
+    public void CameraRota()
+    {
         //targetRotation = new Quaternion(-Input.gyro.attitude.x, -Input.gyro.attitude.y, 0, Input.gyro.attitude.w);
-        //横屏
         targetRotation = new Quaternion(-Input.gyro.attitude.y, -Input.gyro.attitude.z, Input.gyro.attitude.x, Input.gyro.attitude.w) * Quaternion.Euler(90, 90, 0);
-        //竖屏
         //targetRotation = new Quaternion(Input.gyro.attitude.y, Input.gyro.attitude.x, Input.gyro.attitude.z, Input.gyro.attitude.w) * Quaternion.Euler(-90,0,0);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, LowPassFilterFactor);
-   
-        /*
+
+
         if (Input.GetMouseButton(0))
         {
             targetY += Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime; //rota level
@@ -44,7 +47,33 @@ public class RotaCra : MonoBehaviour
             }
             targetRotation.eulerAngles = new Vector3(targetX, Mathf.Repeat(targetY, 360f), 0); //get euler Angles
             transform.rotation = targetRotation;
-        }*/
+        }
     }
-  
+
+    public void LineupTrigger()
+    {
+        float angle = transform.rotation.y;
+        if (angle < 0.14f && angle > 0)
+        {
+            GameObject.Find("cons1").GetComponent<LineUp>().Line();
+        }
+        if (angle < 0.24f && angle > 0.15)
+        {
+            GameObject.Find("cons2").GetComponent<LineUp>().Line();
+        }
+        if (angle < 0.69f && angle > 0.49)
+        {
+            GameObject.Find("cons4").GetComponent<LineUp>().Line();
+        }
+        if (angle < 0.99f && angle > 0.97)
+        {
+            GameObject.Find("cons3").GetComponent<LineUp>().Line();
+        }
+        if (angle < 0.76f && angle > 0.59)
+        {
+            GameObject.Find("cons5").GetComponent<LineUp>().Line();
+        }
+        //Debug.Log(transform.rotation.y);
+    }
+
 }
