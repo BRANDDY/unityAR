@@ -2,10 +2,10 @@
 
 # Project Idea
 
-In light-polluted environments, stars are hard to see with the naked eye.
-And also galaxy and planets need professional equipment to watch.
-###What the universe looks like and what it's like to be surrounded by stars.###
-This homework is made up of my yearning and imagination for the universe。
+- In light-polluted environments, stars are hard to see with the naked eye.
+- And also galaxy and planets need professional equipment to watch.
+### What the universe looks like and what it's like to be surrounded by stars. ###
+- This homework is made up of my yearning and imagination for the universe。
 
 # What you can find
 
